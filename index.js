@@ -1,6 +1,8 @@
 const metricsql = require('./src');
 
-console.log(metricsql);
+process.argv.splice(0, 2);
+var query =  process.argv[0] || `sum(rate(foo{bar="baz"}[5m])) by (x,y)`
+
 console.log(
-  metricsql.parse(`sum(rate(foo{bar="baz"}[5m])) by (x,y)`)
+  metricsql.parse(query)
 );
