@@ -40,13 +40,13 @@ CFLAGS_CC_Debug := \
 	-std=gnu++1y
 
 INCS_Debug := \
-	-I/root/.node-gyp/14.17.2/include/node \
-	-I/root/.node-gyp/14.17.2/src \
-	-I/root/.node-gyp/14.17.2/deps/openssl/config \
-	-I/root/.node-gyp/14.17.2/deps/openssl/openssl/include \
-	-I/root/.node-gyp/14.17.2/deps/uv/include \
-	-I/root/.node-gyp/14.17.2/deps/zlib \
-	-I/root/.node-gyp/14.17.2/deps/v8/include
+	-I/root/.cache/node-gyp/14.17.2/include/node \
+	-I/root/.cache/node-gyp/14.17.2/src \
+	-I/root/.cache/node-gyp/14.17.2/deps/openssl/config \
+	-I/root/.cache/node-gyp/14.17.2/deps/openssl/openssl/include \
+	-I/root/.cache/node-gyp/14.17.2/deps/uv/include \
+	-I/root/.cache/node-gyp/14.17.2/deps/zlib \
+	-I/root/.cache/node-gyp/14.17.2/deps/v8/include
 
 DEFS_Release := \
 	'-DNODE_GYP_MODULE_NAME=addon' \
@@ -83,13 +83,13 @@ CFLAGS_CC_Release := \
 	-std=gnu++1y
 
 INCS_Release := \
-	-I/root/.node-gyp/14.17.2/include/node \
-	-I/root/.node-gyp/14.17.2/src \
-	-I/root/.node-gyp/14.17.2/deps/openssl/config \
-	-I/root/.node-gyp/14.17.2/deps/openssl/openssl/include \
-	-I/root/.node-gyp/14.17.2/deps/uv/include \
-	-I/root/.node-gyp/14.17.2/deps/zlib \
-	-I/root/.node-gyp/14.17.2/deps/v8/include
+	-I/root/.cache/node-gyp/14.17.2/include/node \
+	-I/root/.cache/node-gyp/14.17.2/src \
+	-I/root/.cache/node-gyp/14.17.2/deps/openssl/config \
+	-I/root/.cache/node-gyp/14.17.2/deps/openssl/openssl/include \
+	-I/root/.cache/node-gyp/14.17.2/deps/uv/include \
+	-I/root/.cache/node-gyp/14.17.2/deps/zlib \
+	-I/root/.cache/node-gyp/14.17.2/deps/v8/include
 
 OBJS := \
 	$(obj).target/$(TARGET)/src/metricsql.o
