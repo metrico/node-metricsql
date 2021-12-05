@@ -1,3 +1,5 @@
+<img src="https://user-images.githubusercontent.com/1423657/144750632-c129d650-a898-4436-a65a-a5d4519c42d1.png" width=100 />
+
 # node-metricsql
 
 > Native node binding for the [MetricsQL library](https://github.com/VictoriaMetrics/metricsql)
