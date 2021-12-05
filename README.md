@@ -1,17 +1,22 @@
 # node-metricsql
 
-> Native node binding for MetricsQL golang
+> Native node binding for the [MetricsQL library](https://github.com/VictoriaMetrics/metricsql)
 
-### Build
+
+### Build Module
 ```
 make
 ```
 
-### Test
+### Test Module
 ```
 node index.js
 ```
 
+#### Todo
+- [x] go binding
+- [ ] function mapping
+- [ ] format conversion
 
 ## License
 
