@@ -1,5 +1,6 @@
 try {
-  module.exports = require('../build/Release/addon.node');
+  var binding = require('node-gyp-build')(__dirname)
+  module.exports = binding
 } catch (err) {
-  module.exports = require('../build/Debug/addon.node');
+  module.exports = require('../build/Release/addon.node');
 }

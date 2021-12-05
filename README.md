@@ -6,23 +6,20 @@
 
 
 ### Build Module
-```
+```console
 make
 ```
 
 ### Test Module
-```
+```console
 node index.js 'sum(rate(foo{bar="baz"}[5m]))'
 ```
-```
-aggr func: name=sum, arg=rate(foo{bar="baz"}[5m]), modifier=by (x, y)
-func: name=rate, arg=foo{bar="baz"}[5m]
-rollup: expr=foo{bar="baz"}, window=5m
-metric: labelFilter1=__name__="foo", labelFilter2=bar="baz"parsed expr: sum(rate(foo{bar="baz"}[5m])) by (x, y)
+```json
+{"Name":"sum","Args":[{"Name":"rate","Args":[{"Expr":{"LabelFilters":[{"Label":"__name__","Value":"foo","IsNegative":false,"IsRegexp":false},{"Label":"bar","Value":"baz","IsNegative":false,"IsRegexp":false}]},"Window":{},"Offset":null,"Step":null,"InheritStep":false}]}],"Modifier":{"Op":"by","Args":["x","y"]},"Limit":0}
 ```
 
 #### Todo
 - [x] go binding
-- [ ] function mapping
-- [ ] format conversion
+- [x] function mapping
+- [x] format conversion
 
