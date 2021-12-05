@@ -1,0 +1,16 @@
+{
+  "name": "node-metricsql",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "node-gyp configure build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Lorenzo Mangani <lorenzo.mangani@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "node-gyp": "^3.6.2"
+  }
+}
