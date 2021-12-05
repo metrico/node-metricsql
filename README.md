@@ -10,7 +10,7 @@ make
 
 ### Test Module
 ```
-node index.js
+node index.js 'sum(rate(foo{bar="baz"}[5m]))'
 ```
 ```
 aggr func: name=sum, arg=rate(foo{bar="baz"}[5m]), modifier=by (x, y)
