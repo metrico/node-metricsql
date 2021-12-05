@@ -2,7 +2,7 @@
 
 # node-metricsql
 
-> Native node binding for the [MetricsQL library](https://github.com/VictoriaMetrics/metricsql)
+> Native node binding for [MetricsQL Parser](https://github.com/VictoriaMetrics/metricsql)
 
 
 ### Build Module
