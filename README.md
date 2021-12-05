@@ -18,6 +18,3 @@ node index.js
 - [ ] function mapping
 - [ ] format conversion
 
-## License
-
-[MIT](https://opensource.org/licenses/mit-license)
