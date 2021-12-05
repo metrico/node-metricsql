@@ -121,12 +121,14 @@ $(obj).$(TOOLSET)/$(TARGET)/%.o: $(obj)/%.cc FORCE_DO_CMD
 LDFLAGS_Debug := \
 	-pthread \
 	-rdynamic \
-	-m64
+	-m64 \
+	-Wl,-s
 
 LDFLAGS_Release := \
 	-pthread \
 	-rdynamic \
-	-m64
+	-m64 \
+	-Wl,-s
 
 LIBS := \
 	/usr/src/node-metricsql/metricsql.so
