@@ -15,7 +15,48 @@ make
 node index.js 'sum(rate(foo{bar="baz"}[5m]))'
 ```
 ```json
-{"Name":"sum","Args":[{"Name":"rate","Args":[{"Expr":{"LabelFilters":[{"Label":"__name__","Value":"foo","IsNegative":false,"IsRegexp":false},{"Label":"bar","Value":"baz","IsNegative":false,"IsRegexp":false}]},"Window":{},"Offset":null,"Step":null,"InheritStep":false}]}],"Modifier":{"Op":"by","Args":["x","y"]},"Limit":0}
+{
+   "Name":"sum",
+   "Args":[
+      {
+         "Name":"rate",
+         "Args":[
+            {
+               "Expr":{
+                  "LabelFilters":[
+                     {
+                        "Label":"__name__",
+                        "Value":"foo",
+                        "IsNegative":false,
+                        "IsRegexp":false
+                     },
+                     {
+                        "Label":"bar",
+                        "Value":"baz",
+                        "IsNegative":false,
+                        "IsRegexp":false
+                     }
+                  ]
+               },
+               "Window":{
+                  
+               },
+               "Offset":null,
+               "Step":null,
+               "InheritStep":false
+            }
+         ]
+      }
+   ],
+   "Modifier":{
+      "Op":"by",
+      "Args":[
+         "x",
+         "y"
+      ]
+   },
+   "Limit":0
+}
 ```
 
 #### Todo
