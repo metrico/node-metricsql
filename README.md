@@ -1,6 +1,17 @@
-# Node.js native addon using metricsql golang library
+# node-metricsql
 
-> Native addon using MetricsQL golang library
+> Native node binding for MetricsQL golang
+
+### Build
+```
+make
+```
+
+### Test
+```
+node index.js
+```
+
 
 ## License
 
