@@ -6,8 +6,11 @@
   "scripts": {
     "build": "node-gyp configure build",
     "install": "node-gyp-build",
-    "prebuild": "prebuildify --strip",
+    "prebuild": "prebuildify -t 14.17.2 --napi --strip",
     "test": "node example.js"
+  },
+  "engines": {
+    "node": ">=14"
   },
   "keywords": [],
   "author": "Lorenzo Mangani <lorenzo.mangani@gmail.com>",
