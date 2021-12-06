@@ -18,7 +18,7 @@ const parsed = metricsql.parse(promql);
 
 ### Test Module
 ```console
-node example.js 'sum(rate(foo{bar="baz"}[5m]))'
+node example.js 'sum(rate(foo{bar="baz"}[5m])) by (x,y)'
 ```
 ```json
 {
