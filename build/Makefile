@@ -308,8 +308,8 @@ ifeq ($(strip $(foreach prefix,$(NO_LOAD),\
 endif
 
 quiet_cmd_regen_makefile = ACTION Regenerating $@
-cmd_regen_makefile = cd $(srcdir); /usr/src/node-metricsql/node_modules/node-gyp/gyp/gyp_main.py -fmake --ignore-environment "--toplevel-dir=." -I/usr/src/node-metricsql/build/config.gypi -I/usr/src/node-metricsql/node_modules/node-gyp/addon.gypi -I/root/.node-gyp/14.17.2/include/node/common.gypi "--depth=." "-Goutput_dir=." "--generator-output=build" "-Dlibrary=shared_library" "-Dvisibility=default" "-Dnode_root_dir=/root/.node-gyp/14.17.2" "-Dnode_gyp_dir=/usr/src/node-metricsql/node_modules/node-gyp" "-Dnode_lib_file=/root/.node-gyp/14.17.2/<(target_arch)/node.lib" "-Dmodule_root_dir=/usr/src/node-metricsql" "-Dnode_engine=v8" binding.gyp
-Makefile: $(srcdir)/../../../root/.node-gyp/14.17.2/include/node/common.gypi $(srcdir)/node_modules/node-gyp/addon.gypi $(srcdir)/build/config.gypi $(srcdir)/binding.gyp
+cmd_regen_makefile = cd $(srcdir); /usr/local/lib/node_modules/npm/node_modules/node-gyp/gyp/gyp_main.py -fmake --ignore-environment "--toplevel-dir=." -I/home/shurik/Projects/node-metricsql/build/config.gypi -I/usr/local/lib/node_modules/npm/node_modules/node-gyp/addon.gypi -I/home/shurik/.cache/node-gyp/14.17.0/include/node/common.gypi "--depth=." "-Goutput_dir=." "--generator-output=build" "-Dlibrary=shared_library" "-Dvisibility=default" "-Dnode_root_dir=/home/shurik/.cache/node-gyp/14.17.0" "-Dnode_gyp_dir=/usr/local/lib/node_modules/npm/node_modules/node-gyp" "-Dnode_lib_file=/home/shurik/.cache/node-gyp/14.17.0/<(target_arch)/node.lib" "-Dmodule_root_dir=/home/shurik/Projects/node-metricsql" "-Dnode_engine=v8" binding.gyp
+Makefile: $(srcdir)/../../.cache/node-gyp/14.17.0/include/node/common.gypi $(srcdir)/build/config.gypi $(srcdir)/binding.gyp $(srcdir)/../../../../usr/local/lib/node_modules/npm/node_modules/node-gyp/addon.gypi
 	$(call do_cmd,regen_makefile)
 
 # "all" is a concatenation of the "all" targets from all the included

@@ -40,13 +40,13 @@ CFLAGS_CC_Debug := \
 	-std=gnu++1y
 
 INCS_Debug := \
-	-I/root/.node-gyp/14.17.2/include/node \
-	-I/root/.node-gyp/14.17.2/src \
-	-I/root/.node-gyp/14.17.2/deps/openssl/config \
-	-I/root/.node-gyp/14.17.2/deps/openssl/openssl/include \
-	-I/root/.node-gyp/14.17.2/deps/uv/include \
-	-I/root/.node-gyp/14.17.2/deps/zlib \
-	-I/root/.node-gyp/14.17.2/deps/v8/include
+	-I/home/shurik/.cache/node-gyp/14.17.0/include/node \
+	-I/home/shurik/.cache/node-gyp/14.17.0/src \
+	-I/home/shurik/.cache/node-gyp/14.17.0/deps/openssl/config \
+	-I/home/shurik/.cache/node-gyp/14.17.0/deps/openssl/openssl/include \
+	-I/home/shurik/.cache/node-gyp/14.17.0/deps/uv/include \
+	-I/home/shurik/.cache/node-gyp/14.17.0/deps/zlib \
+	-I/home/shurik/.cache/node-gyp/14.17.0/deps/v8/include
 
 DEFS_Release := \
 	'-DNODE_GYP_MODULE_NAME=addon' \
@@ -83,13 +83,13 @@ CFLAGS_CC_Release := \
 	-std=gnu++1y
 
 INCS_Release := \
-	-I/root/.node-gyp/14.17.2/include/node \
-	-I/root/.node-gyp/14.17.2/src \
-	-I/root/.node-gyp/14.17.2/deps/openssl/config \
-	-I/root/.node-gyp/14.17.2/deps/openssl/openssl/include \
-	-I/root/.node-gyp/14.17.2/deps/uv/include \
-	-I/root/.node-gyp/14.17.2/deps/zlib \
-	-I/root/.node-gyp/14.17.2/deps/v8/include
+	-I/home/shurik/.cache/node-gyp/14.17.0/include/node \
+	-I/home/shurik/.cache/node-gyp/14.17.0/src \
+	-I/home/shurik/.cache/node-gyp/14.17.0/deps/openssl/config \
+	-I/home/shurik/.cache/node-gyp/14.17.0/deps/openssl/openssl/include \
+	-I/home/shurik/.cache/node-gyp/14.17.0/deps/uv/include \
+	-I/home/shurik/.cache/node-gyp/14.17.0/deps/zlib \
+	-I/home/shurik/.cache/node-gyp/14.17.0/deps/v8/include
 
 OBJS := \
 	$(obj).target/$(TARGET)/src/metricsql.o
@@ -131,7 +131,7 @@ LDFLAGS_Release := \
 	-Wl,-s
 
 LIBS := \
-	/usr/src/node-metricsql/metricsql.so
+	/home/shurik/Projects/node-metricsql/metricsql.so
 
 $(obj).target/addon.node: GYP_LDFLAGS := $(LDFLAGS_$(BUILDTYPE))
 $(obj).target/addon.node: LIBS := $(LIBS)

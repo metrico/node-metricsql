@@ -1,1 +1,1 @@
-cmd_Release/obj.target/addon.node := g++ -shared -pthread -rdynamic -m64 -Wl,-s  -Wl,-soname=addon.node -o Release/obj.target/addon.node -Wl,--start-group Release/obj.target/addon/src/metricsql.o -Wl,--end-group /usr/src/node-metricsql/metricsql.so
+cmd_Release/obj.target/addon.node := g++ -shared -pthread -rdynamic -m64 -Wl,-s  -Wl,-soname=addon.node -o Release/obj.target/addon.node -Wl,--start-group Release/obj.target/addon/src/metricsql.o -Wl,--end-group /home/shurik/Projects/node-metricsql/metricsql.so
