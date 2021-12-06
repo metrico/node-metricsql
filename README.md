@@ -25,39 +25,35 @@ node index.js 'sum(rate(foo{bar="baz"}[5m]))'
                "Expr":{
                   "LabelFilters":[
                      {
-                        "Label":"__name__",
-                        "Value":"foo",
                         "IsNegative":false,
-                        "IsRegexp":false
+                        "IsRegexp":false,
+                        "Label":"__name__",
+                        "Value":"foo"
                      },
                      {
-                        "Label":"bar",
-                        "Value":"baz",
                         "IsNegative":false,
-                        "IsRegexp":false
+                        "IsRegexp":false,
+                        "Label":"bar",
+                        "Value":"baz"
                      }
                   ]
                },
-               "Window":{
-                  
-               },
-               "Offset":null,
-               "Step":null,
+               "Window":"5m",
+               "Offset":"",
+               "Step":"",
                "InheritStep":false
             }
          ]
       }
    ],
    "Modifier":{
-      "Op":"by",
       "Args":[
          "x",
          "y"
-      ]
-   },
-   "Limit":0
-}
-```
+      ],
+      "Op":"by"
+   }
+}```
 
 #### Todo
 - [x] go binding

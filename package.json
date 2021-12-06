@@ -7,7 +7,7 @@
     "build": "node-gyp configure build",
     "install": "node-gyp-build",
     "prebuild": "prebuildify --strip",
-    "test": "node index.js"
+    "test": "node example.js"
   },
   "keywords": [],
   "author": "Lorenzo Mangani <lorenzo.mangani@gmail.com>",
