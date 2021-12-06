@@ -1,17 +1,19 @@
 {
   "name": "node-metricsql",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Native MetricsQL and PromQL parser binding",
   "main": "index.js",
   "scripts": {
     "build": "node-gyp configure build",
     "install": "node-gyp-build",
+    "prebuild": "prebuildify --strip",
     "test": "node index.js"
   },
   "keywords": [],
   "author": "Lorenzo Mangani <lorenzo.mangani@gmail.com>",
   "license": "MIT",
   "devDependencies": {
+    "prebuildify": "^5.0.0",
     "node-gyp": "^3.6.2"
   },
   "dependencies": {
