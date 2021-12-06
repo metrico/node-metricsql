@@ -10,9 +10,15 @@
 make
 ```
 
+### Usage
+```javascript
+const metricsql = require('node-metricsql');
+const parsed = metricsql.parse(promql);
+```
+
 ### Test Module
 ```console
-node index.js 'sum(rate(foo{bar="baz"}[5m]))'
+node example.js 'sum(rate(foo{bar="baz"}[5m]))'
 ```
 ```json
 {
@@ -53,7 +59,8 @@ node index.js 'sum(rate(foo{bar="baz"}[5m]))'
       ],
       "Op":"by"
    }
-}```
+}
+```
 
 #### Todo
 - [x] go binding
