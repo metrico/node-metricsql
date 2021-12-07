@@ -1,12 +1,12 @@
 {
   "name": "node-metricsql",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "Native MetricsQL and PromQL parser binding",
   "main": "index.js",
   "scripts": {
     "build": "node-gyp configure build",
     "install": "node-gyp-build",
-    "prebuild": "prebuildify -t 14.17.2 --napi --strip",
+    "prebuild": "prebuildify -t 14.17.2 --strip",
     "test": "node example.js"
   },
   "engines": {
