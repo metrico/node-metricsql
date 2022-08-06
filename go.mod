@@ -3,3 +3,9 @@ module github.com/metrico/metricsql
 go 1.18
 
 require github.com/VictoriaMetrics/metricsql v0.44.1
+
+require (
+	github.com/VictoriaMetrics/metrics v1.18.1 // indirect
+	github.com/valyala/fastrand v1.1.0 // indirect
+	github.com/valyala/histogram v1.2.0 // indirect
+)
